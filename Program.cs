@@ -17,7 +17,8 @@ app.UseSwagger();
 app.UseSwaggerUI();
 
 app.UseAuthorization();
+
 app.MapControllers();
 
-app.Run();
-
+// ✅ Required for Render to work
+app.Run("http://0.0.0.0:8080");
